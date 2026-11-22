@@ -1,0 +1,22 @@
+{
+  "name": "go-board-replay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "围棋复盘照片识别：照片透视校正、交叉点识别、落子/提子重建、SGF 导出",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "gen:photos": "tsx tools/generate-photos.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "test:accuracy": "tsx tools/accuracy-report.ts",
+    "test:timing": "tsx tools/timing-report.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
